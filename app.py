@@ -18,12 +18,6 @@ load_dotenv()
 
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
-prompt_text = """You are YouTube Video Chats.
-            You will be taking transcript text and summarizing the entire video
-            and providing the important summary in points within 600-800 Words in Marathi.
-            
-            Here is the transcript text:\n"""
-
 
 def generate_gemini_content(transcript_text, prompt):
 
@@ -161,7 +155,8 @@ def generate_suggested_questions(description):
         **Summary:**
         {description}
         
-        generate three thoughtful and engaging questions that might be asked from the video.
+        generate three thoughtful and engaging questions that might be asked by viewer from the video 
+        The question should have the answer which will have the answer in the video context.
         The questions should focus on key topics, interesting points, or areas for further exploration.
         
         Follow the JSON schema.<JSONSchema>{json.dumps(required_response_schema)}</JSONSchema>
