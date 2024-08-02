@@ -179,7 +179,7 @@ def main():
     model = ChatGoogleGenerativeAI(
         model="gemini-1.5-flash",
         temperature=0.4,
-        max_tokens=800,
+        max_tokens=1000,
     )
 
     youtube_link = st.text_input("Enter YouTube Video Link:", placeholder="https://www.youtube.com/watch?v=video_url_id")
