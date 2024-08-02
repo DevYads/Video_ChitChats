@@ -211,9 +211,9 @@ def main():
             try:
                 transcription = extract_transcript_details(youtube_video_id)
                 if transcription:
-                    with open(f"transcript_files/YouTube-ID-{youtube_video_id}-transcript.txt", "w") as f:
-                        f.write(transcription)
-                    # print("Transcription Saved!")
+                    # with open(f"transcript_files/YouTube-ID-{youtube_video_id}-transcript.txt", "w") as f:
+                    #     f.write(transcription)
+                    print("Transcription Saved!")
                     if transcription:
                         text_chunks = get_text_chunks(transcription)
                         get_vector_store(text_chunks)
