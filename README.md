@@ -21,8 +21,8 @@ To run this project locally, follow these steps:
 1. **Clone the repository**:
 
     ```sh
-    git clone https://github.com/DevYads/Video-ChitChats.git
-    cd Video-ChitChats
+    git clone https://github.com/DevYads/Video_ChitChats.git
+    cd Video_ChitChats
     ```
 
 2. **Create and activate a virtual environment** (optional but recommended):
