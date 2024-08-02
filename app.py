@@ -72,7 +72,7 @@ def get_conversational_chat_chain(model):
     Answer the question as detailed as possible from the provided video context transcript.
     If the question is related to the topic discussed but does not have answers in the provided context
     Then say that provided context does not have answer but I can give the answer and then you will provide
-    the answers from your database.
+    the answers from your database. Give the answer in 600-800 words.
     Context:\n {context}?\n
     Question:\n{question}\n
     
@@ -179,7 +179,6 @@ def main():
     model = ChatGoogleGenerativeAI(
         model="gemini-1.5-flash",
         temperature=0.4,
-        max_tokens=1000,
     )
 
     youtube_link = st.text_input("Enter YouTube Video Link:", placeholder="https://www.youtube.com/watch?v=video_url_id")
