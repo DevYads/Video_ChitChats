@@ -155,9 +155,9 @@ def generate_suggested_questions(description):
         **Summary:**
         {description}
         
-        generate three thoughtful and engaging questions that might be asked by viewer from the video 
-        The question should have the answer which will have the answer in the video context.
-        The questions should focus on key topics, interesting points, or areas for further exploration.
+        Generate ten thoughtful and engaging questions that might be asked and their answer can be found in the video.
+        All the five questions should be in the similar order of the content
+        The questions should focus on key topics, interesting points.
         
         Follow the JSON schema.<JSONSchema>{json.dumps(required_response_schema)}</JSONSchema>
         """
