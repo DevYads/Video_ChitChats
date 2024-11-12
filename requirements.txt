@@ -9,8 +9,6 @@ chromadb==0.5.4
 youtube_transcript_api==0.6.2
 pathlib==1.0.1
 google-generativeai
-streamlit
-langchain
 PyPDF2
 faiss-cpu
 pdfplumber
